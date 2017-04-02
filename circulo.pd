@@ -1,0 +1,42 @@
+#N canvas 559 117 721 617 10;
+#X obj 100 219 color;
+#X obj 100 167 gemhead 50;
+#X obj 101 411 s pixs;
+#X obj 100 386 disk;
+#X floatatom 142 329 5 0 0 0 - - -;
+#X floatatom 139 387 5 0 0 0 - - -;
+#X msg 177 406 100;
+#X obj 175 385 loadbang;
+#X obj 118 104 cnv 15 60 15 empty empty circulo1 0 8 0 10 -228856 -66577
+0;
+#X obj 92 44 r ligacirculo1;
+#X obj 49 175 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 141 271 inlet;
+#X obj 214 223 inlet;
+#X obj 251 136 spigot;
+#X obj 101 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 231 61 loadbang;
+#X msg 230 82 0;
+#X obj 140 299 expr $f1/100*8;
+#X obj 100 191 translateXYZ 0 0 -3.98;
+#X connect 0 0 3 0;
+#X connect 1 0 18 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 3;
+#X connect 6 0 3 2;
+#X connect 7 0 6 0;
+#X connect 9 0 14 0;
+#X connect 10 0 1 0;
+#X connect 11 0 13 0;
+#X connect 12 0 0 1;
+#X connect 13 0 17 0;
+#X connect 14 0 13 1;
+#X connect 14 0 10 0;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 4 0;
+#X connect 18 0 0 0;
+#X coords 0 -1 1 1 85 20 1 100 100;
